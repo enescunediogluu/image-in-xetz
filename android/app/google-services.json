@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615409075289",
+    "project_id": "imagein-xetz",
+    "storage_bucket": "imagein-xetz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615409075289:android:d21da0746b70056eab9d48",
+        "android_client_info": {
+          "package_name": "com.example.imagein"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmKfe0xe15gNK1SZzV8XpvcaEv8Gx5HjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
