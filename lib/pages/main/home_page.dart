@@ -79,14 +79,21 @@ class _HomePageState extends State<HomePage> {
               ),
               const SizedBox(height: 15),
               _imageFile != null
-                  ? Container(
-                      width: MediaQuery.of(context).size.width - 30,
-                      height: 300,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        image: DecorationImage(
-                          image: FileImage(File(_imageFile!.path)),
-                          fit: BoxFit.cover,
+                  ? GestureDetector(
+                      onLongPress: () {
+                        setState(() {
+                          _imageFile = null;
+                        });
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width - 30,
+                        height: 300,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          image: DecorationImage(
+                            image: FileImage(File(_imageFile!.path)),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     )
